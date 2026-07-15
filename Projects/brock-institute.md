@@ -19,5 +19,9 @@
 3. What are the specific client changes to make?
 4. What platform is the site on (Wix / Webflow / WordPress / custom)? — *Wix connector is available if it's Wix.*
 
+## Notes (from sessions)
+- 2026-07-15 (from session) — Wired GitHub to the new source of truth: the static export is becoming the new `main` of `pbakerx/brock-institute`, with the current hand-built site preserved as a `rebuild-archive` branch (nothing lost). Push script staged on the external drive. Live site left untouched.
+- 2026-07-15 (from session) — Downloaded both portfolio PDF batches (~140 PDFs). Next: unzip and repoint all ~140 portfolio links to local files, then verify 100%.
+
 ## Changelog
 - 2026-07-15 — Project created, scope doc drafted.

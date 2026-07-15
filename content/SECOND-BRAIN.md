@@ -2,7 +2,7 @@
 
 _Your command center. Everything you're building, in one place. Updated continuously._
 
-**Last updated:** 2026-07-15
+**Last updated:** 2026-07-15 (7 AM session scan)
 
 ---
 
@@ -10,9 +10,9 @@ _Your command center. Everything you're building, in one place. Updated continuo
 
 > The 1–3 things that actually move the needle today. Reviewed every morning at 7 AM.
 
-1. **Brock Institute** — confirm dev site accuracy, wire contact forms, make client changes → [open](Projects/brock-institute.md)
-2. _(add)_
-3. _(add)_
+1. **Honda/Acura Summer Ads** — resume the Honda render at range `598-722` (125 dealers left) → [open](Projects/honda-acura-summer-ads.md)
+2. **philipbaker.us engine** — run `multisite.sql` in Supabase to unlock the multi-brand studio → [open](Projects/philipbkaer-us-engine.md)
+3. **Brock Institute** — repoint ~140 portfolio links to the downloaded local PDFs → [open](Projects/brock-institute.md)
 
 See the running log → [Daily Log](daily-log.md)
 
@@ -23,11 +23,15 @@ _Time-bound, has a finish line._
 
 | Project | Status | Next action | Link |
 |---|---|---|---|
-| Brock Institute site | 🟡 In progress | Confirm dev site + wire forms | [→](Projects/brock-institute.md) |
+| Honda/Acura Summer Service Ads | 🟡 In progress | Resume Honda render `598-722`; render Acura outliers | [→](Projects/honda-acura-summer-ads.md) |
+| Brock Institute site | 🟡 In progress | Repoint ~140 portfolio links to local PDFs | [→](Projects/brock-institute.md) |
 | VoiceAgent — Mass Scale Marketing | 🟢 Pipeline proven | Scale outreach | [→](Projects/aechtech-voice-agents.md) |
 | Voice Agent — Personal Pitch | 🆕 New | Define concept + scope | [→](Projects/voice-agent-personal-pitch.md) |
 | Assist AI | 🟡 Building | Roast Machine · Daily Voice · Camera Overlay | [→](Projects/assist-ai.md) |
-| philipbkaer.us engine | 🆕 New | Define engine scope | [→](Projects/philipbkaer-us-engine.md) |
+| philipbaker.us engine | 🟡 Building | Run `multisite.sql` in Supabase | [→](Projects/philipbkaer-us-engine.md) |
+| Ruby Tuesday Summer LTOs | 🟡 In progress | Log timesheet; client review | [→](Projects/ruby-tuesday-summer-ltos.md) |
+| Lady on Main (real estate) | 🟢 Deployed | Test call end-to-end | [→](Projects/lady-on-main.md) |
+| QuickBooks / Invoicing | 🟡 Ongoing | Keep AR current | [→](Projects/quickbooks-invoicing.md) |
 | 2025 Taxes (personal/admin) | 🟡 To do | Gather documents; confirm filing status | [→](Projects/2025-taxes.md) |
 | Kids Photo Gallery | 🆕 New | Define concept + scope | [→](Projects/kids-photo-gallery.md) |
 
