@@ -6,8 +6,10 @@ _Building Assist.ai and client applications._
 **Flagship:** Assist.ai (built with Claude). AechTech Voice Agents pipeline proven end-to-end.
 
 ## Products
-- **Assist.ai** — _(one-liner + status)_
-- **AechTech Voice Agents** — full pipeline built & proven → [project tracker](../Projects/aechtech-voice-agents.md)
+- **Assist AI** — flagship; building Roast Machine, Daily Voice, Camera Overlay → [project tracker](../Projects/assist-ai.md)
+- **VoiceAgent — Mass Scale Marketing** — full pipeline built & proven (formerly AechTech Voice Agents) → [project tracker](../Projects/aechtech-voice-agents.md)
+- **Voice Agent — Personal Pitch** — new → [project tracker](../Projects/voice-agent-personal-pitch.md)
+- **philipbkaer.us engine** — new → [project tracker](../Projects/philipbkaer-us-engine.md)
 
 ## Pipeline
 | Prospect | Stage | Next action |

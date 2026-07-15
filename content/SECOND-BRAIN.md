@@ -24,7 +24,10 @@ _Time-bound, has a finish line._
 | Project | Status | Next action | Link |
 |---|---|---|---|
 | Brock Institute site | 🟡 In progress | Confirm dev site + wire forms | [→](Projects/brock-institute.md) |
-| AechTech Voice Agents | 🟢 Pipeline proven | Scale outreach | [→](Projects/aechtech-voice-agents.md) |
+| VoiceAgent — Mass Scale Marketing | 🟢 Pipeline proven | Scale outreach | [→](Projects/aechtech-voice-agents.md) |
+| Voice Agent — Personal Pitch | 🆕 New | Define concept + scope | [→](Projects/voice-agent-personal-pitch.md) |
+| Assist AI | 🟡 Building | Roast Machine · Daily Voice · Camera Overlay | [→](Projects/assist-ai.md) |
+| philipbkaer.us engine | 🆕 New | Define engine scope | [→](Projects/philipbkaer-us-engine.md) |
 
 ---
 
