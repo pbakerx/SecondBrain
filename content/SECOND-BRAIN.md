@@ -28,6 +28,7 @@ _Time-bound, has a finish line._
 | Voice Agent — Personal Pitch | 🆕 New | Define concept + scope | [→](Projects/voice-agent-personal-pitch.md) |
 | Assist AI | 🟡 Building | Roast Machine · Daily Voice · Camera Overlay | [→](Projects/assist-ai.md) |
 | philipbkaer.us engine | 🆕 New | Define engine scope | [→](Projects/philipbkaer-us-engine.md) |
+| 2025 Taxes (personal/admin) | 🟡 To do | Gather documents; confirm filing status | [→](Projects/2025-taxes.md) |
 
 ---
 
