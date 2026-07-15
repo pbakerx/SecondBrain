@@ -13,7 +13,7 @@ This document defines the scope of work for the Brock Institute website engageme
 **Objective:** Deliver an accurate, fully functional Brock Institute website with working contact forms and client-approved content, ready for production.
 
 ## 2. Background
-- Platform: _[Wix / Webflow / WordPress / custom — fill in]_
+- Platform / hosting: Static site deployed on **Vercel** via GitHub (`pbakerx/brock-institute`); prior hand-built site preserved on a `rebuild-archive` branch.
 - Development site: _[dev URL — fill in]_
 - Production domain: _[live domain — fill in]_
 
@@ -29,7 +29,7 @@ _(adjust as needed)_
 - Ongoing content creation, blog management, or marketing campaigns.
 - Advanced SEO, paid media, or analytics buildout beyond basic setup.
 - Third-party integrations not listed above.
-- Post-launch maintenance retainer (available separately).
+- Ongoing hosting & maintenance is **not** part of the one-time build — it's covered by the Managed Hosting & Care Plan (see §7).
 
 ## 5. Deliverables
 - Dev-site accuracy punch list (documented findings).
@@ -45,9 +45,18 @@ _(adjust as needed)_
 | Client changes applied | _[date]_ |
 | Final QA & launch | _[date]_ |
 
-## 7. Investment _[fill in]_
-- Fee: _[fixed fee / hourly rate & estimate]_
-- Payment terms: _[deposit / milestone / net terms]_
+## 7. Investment
+
+**One-time build** (the scope in §3)
+- Fee: _[fixed fee / hourly rate & estimate — fill in]_
+- Payment terms: _[deposit / milestone / net terms — fill in]_
+
+**Ongoing — Managed Hosting & Care Plan** (recommended)
+- **$75/month** (or **$750/year**), starting at launch.
+- Includes: Vercel hosting, domain/SSL, contact-form handling, uptime monitoring, security updates, backups (full version history), and **up to 1 hour of content edits per month**. Support within 2 business days.
+- Additional edits beyond the monthly hour: $95/hr.
+- Month-to-month or annual; 30 days' notice to cancel.
+- _Full details: see the Managed Hosting & Care Plan sheet._
 
 ## 8. Assumptions & Client Responsibilities
 - Client provides timely access to the site platform, domain/DNS, and any required accounts.

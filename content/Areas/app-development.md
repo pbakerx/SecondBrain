@@ -11,10 +11,13 @@ _Building Assist.ai and client applications._
 - **Voice Agent — Personal Pitch** — new → [project tracker](../Projects/voice-agent-personal-pitch.md)
 - **philipbkaer.us engine** — new → [project tracker](../Projects/philipbkaer-us-engine.md)
 
+## Recurring offering
+- **Managed Hosting & Care Plan** — $75/mo flat (hosting + maintenance on Vercel) → [details](../Resources/hosting-care-plan.md). First target: Brock.
+
 ## Pipeline
 | Prospect | Stage | Next action |
 |---|---|---|
-| _(add)_ | | |
+| Brock Institute | Scope + hosting plan drafted | Send scope; propose $75/mo care plan |
 
 ## Ideas & notes
 - _(capture here)_

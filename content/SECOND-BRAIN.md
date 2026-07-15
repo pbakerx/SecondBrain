@@ -51,6 +51,7 @@ _Ongoing, no end date. Your three pillars._
 ## 📚 Resources
 _Reference material, swipe files, taglines, research._
 
+- [Managed Hosting & Care Plan ($75/mo offering)](Resources/hosting-care-plan.md)
 - [Taglines & Juicy Lines](Resources/taglines.md)
 - [Second Brain — how others do it (X scan)](Resources/second-brain-methods.md)
 

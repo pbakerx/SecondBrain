@@ -12,6 +12,7 @@
 - [ ] **Wire up the contact form(s)** — connect submissions to email/CRM, test end-to-end _(blocked: need URL + destination)_
 - [ ] **Make client changes** — apply the change list _(blocked: need change list)_
 - [ ] **Create scope doc** — ✅ drafted, see [brock-scope.md](brock-scope.md) (needs your fill-ins)
+- [ ] **Propose Managed Hosting & Care Plan** ($75/mo) to Brock — now in the scope (§7); see [hosting-care-plan.md](../Resources/hosting-care-plan.md)
 
 ## Open questions (need from Philip)
 1. What's the dev site URL?
