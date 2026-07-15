@@ -15,7 +15,7 @@ bash deploy.sh
 It refreshes content from your brain, rebuilds the pages, and deploys to Vercel
 using the `VERCEL_TOKEN` already in `../aechtech-voice-agents/.env`.
 
-**Login:** user `philip` · password `cobalt-nimbus-1152`
+**Login:** set via `.deploy.env` (local) or Vercel env vars `BRAIN_USER` / `BRAIN_PASSWORD`
 (change `BRAIN_PASSWORD` in `deploy.sh` and re-run to update it)
 
 ## Update after editing your brain
