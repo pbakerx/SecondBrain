@@ -34,6 +34,7 @@ _Time-bound, has a finish line._
 | QuickBooks / Invoicing | 🟡 Ongoing | Keep AR current | [→](Projects/quickbooks-invoicing.md) |
 | 2025 Taxes (personal/admin) | 🟡 To do | Gather documents; confirm filing status | [→](Projects/2025-taxes.md) |
 | Kids Photo Gallery | 🆕 New | Define concept + scope | [→](Projects/kids-photo-gallery.md) |
+| Roast Machine iOS App | 🆕 New | Define concept + scope | [→](Projects/roast-machine-ios-app.md) |
 
 ---
 
