@@ -1,0 +1,14 @@
+# Secrets & separate projects
+aechtech-voice-agents/
+**/.env
+**/.env.*
+.deploy.env
+
+# Deploy password (kept local, never committed)
+# Node / build
+**/node_modules/
+brain-site/node_modules/
+
+# OS
+.DS_Store
+**/.DS_Store
