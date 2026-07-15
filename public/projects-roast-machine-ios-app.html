@@ -28,18 +28,26 @@ body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,H
 .updated{color:var(--muted);font-size:12.5px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
 @media(max-width:760px){.wrap{flex-direction:column}.side{width:100%;height:auto;position:static;flex-basis:auto}.main{padding:24px}}
 </style></head>
-<body><div class="wrap"><nav class="side"><div class="brand">🧠 World of Business</div><div class="sec">Dashboard</div><a href="second-brain.html">Philip Baker — Second Brain</a><div class="sec">Projects</div><a href="projects-2025-taxes.html">2025 Taxes</a><a href="projects-aechtech-voice-agents.html">VoiceAgent — Mass Scale Marketing</a><a href="projects-assist-ai.html">Assist AI</a><a href="projects-brock-institute.html">Brock Institute — Website Project</a><a href="projects-brock-scope.html">Brock Institute — Website Scope of Work</a><a href="projects-honda-acura-summer-ads.html">Honda / Acura — Summer Service Ads (dealer name automation)</a><a href="projects-kids-photo-gallery.html">Kids Photo Gallery</a><a href="projects-lady-on-main.html">Lady on Main — real estate landing page (voice agent)</a><a href="projects-philipbkaer-us-engine.html">philipbaker.us — Engine (multi-tenant studio)</a><a href="projects-quickbooks-invoicing.html">QuickBooks / Invoicing (admin)</a><a href="projects-roast-machine-ios-app.html" class="active">Roast Machine — iOS App</a><a href="projects-ruby-tuesday-summer-ltos.html">Ruby Tuesday — Summer LTO Campaign Concepts</a><a href="projects-voice-agent-personal-pitch.html">Voice Agent — Personal Pitch</a><div class="sec">Areas</div><a href="areas-ai-creative.html">AI Creative</a><a href="areas-ai-implementation.html">AI Implementation</a><a href="areas-app-development.html">App Development — AechTech, LLC</a><div class="sec">Resources</div><a href="resources-hosting-care-plan.html">Managed Hosting & Care Plan (Vercel)</a><a href="resources-second-brain-methods.html">How others build a "Second Brain" — quick X / web scan</a><a href="resources-taglines.html">Taglines & Juicy Lines</a><div class="sec">Log</div><a href="daily-log.html">Daily Log</a></nav>
+<body><div class="wrap"><nav class="side"><div class="brand">🧠 World of Business</div><div class="sec">Dashboard</div><a href="second-brain.html">Philip Baker — Second Brain</a><div class="sec">Projects</div><a href="projects-2025-taxes.html">2025 Taxes</a><a href="projects-aechtech-voice-agents.html">VoiceAgent — Mass Scale Marketing</a><a href="projects-assist-ai.html">Assist AI</a><a href="projects-brock-institute.html">Brock Institute — Website Project</a><a href="projects-brock-scope.html">Brock Institute — Website Scope of Work</a><a href="projects-honda-acura-summer-ads.html">Honda / Acura — Summer Service Ads (dealer name automation)</a><a href="projects-kids-photo-gallery.html">Kids Photo Gallery</a><a href="projects-lady-on-main.html">Lady on Main — real estate landing page (voice agent)</a><a href="projects-philipbaker-story-podcast.html">Philip Baker Story Podcast — Automated</a><a href="projects-philipbkaer-us-engine.html">philipbaker.us — Engine (multi-tenant studio)</a><a href="projects-quickbooks-invoicing.html">QuickBooks / Invoicing (admin)</a><a href="projects-roast-machine-ios-app.html" class="active">Roast Machine — iOS App</a><a href="projects-ruby-tuesday-summer-ltos.html">Ruby Tuesday — Summer LTO Campaign Concepts</a><a href="projects-voice-agent-personal-pitch.html">Voice Agent — Personal Pitch</a><div class="sec">Areas</div><a href="areas-ai-creative.html">AI Creative</a><a href="areas-ai-implementation.html">AI Implementation</a><a href="areas-app-development.html">App Development — AechTech, LLC</a><div class="sec">Resources</div><a href="resources-hosting-care-plan.html">Managed Hosting & Care Plan (Vercel)</a><a href="resources-second-brain-methods.html">How others build a "Second Brain" — quick X / web scan</a><a href="resources-taglines.html">Taglines & Juicy Lines</a><div class="sec">Log</div><a href="daily-log.html">Daily Log</a></nav>
 <main class="main"><article class="content"><h1>Roast Machine — iOS App</h1>
-<p><strong>Area:</strong> <a href="areas-app-development.html">App Development</a> · <strong>Status:</strong> 🆕 New
+<p><strong>Area:</strong> <a href="areas-app-development.html">App Development</a> · <strong>Status:</strong> 🟡 Scoping (auto-detected — confirm)
 <em>Related: the &quot;Roast Machine&quot; build under <a href="projects-assist-ai.html">Assist AI</a>.</em></p>
+<h2>What it is</h2>
+<p>SwiftUI iPhone/iPad app. Single flow: snap or pick a photo → choose a mode → a vision model analyzes the image → an LLM writes the bit → TTS speaks it with a waveform → share/save the clip. Framing keeps it playful (photo &quot;practicing standup&quot;). One-time unlock at Apple&#39;s $0.99 minimum. Bundle would be <code>AechTech.RoastMachine</code>.</p>
+<p><strong>Modes (concept):</strong></p>
+<ul>
+<li>Roast flavors: Classic Standup, British Dry Wit, Gordon Ramsay, Disappointed Mom, Gen Z, Shakespearean, Drill Sergeant, Diss Track, Corporate LinkedIn.</li>
+<li>Nice/other: You&#39;re So Beautiful, Motivational Coach, Nature Documentary, Fortune Teller, Conspiracy Theorist, Pickup-line, Dating Bio writer, Pet Translator, Party Guessers (age/job/star sign).</li>
+</ul>
 <h2>To-dos</h2>
 <ul>
-<li><input disabled="" type="checkbox"> Define concept + scope</li>
-<li><input disabled="" type="checkbox"> <em>(add)</em></li>
+<li><input disabled="" type="checkbox"> Lock the mode list + which ship in v1</li>
+<li><input disabled="" type="checkbox"> Scaffold the Xcode project (reuse AssistAI&#39;s signing, Secrets.xcconfig, and StoreKit patterns)</li>
+<li><input disabled="" type="checkbox"> Wire vision → LLM → TTS flow with waveform + share/save</li>
 </ul>
 <h2>Notes</h2>
 <ul>
-<li><em>(what it does, platform, how it relates to Assist AI&#39;s Roast Machine — capture here)</em></li>
+<li>2026-07-15 (from session) — Concept laid out; session in progress, awaiting a few build decisions. Plan reuses the existing AssistAI Xcode config (automatic signing, <code>Secrets.xcconfig</code> key pattern, StoreKit in-app-purchase setup) as a head start — AssistAI folder left untouched.</li>
 </ul>
 </article>
-<div class="updated">Rendered 2026-07-15 17:14 UTC · Philip Baker's Second Brain</div></main></div></body></html>
+<div class="updated">Rendered 2026-07-15 17:29 UTC · Philip Baker's Second Brain</div></main></div></body></html>

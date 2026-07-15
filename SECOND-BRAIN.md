@@ -2,7 +2,7 @@
 
 _Your command center. Everything you're building, in one place. Updated continuously._
 
-**Last updated:** 2026-07-15 (7 AM session scan)
+**Last updated:** 2026-07-15 (7 AM session scan — 2nd pass)
 
 ---
 
@@ -34,7 +34,8 @@ _Time-bound, has a finish line._
 | QuickBooks / Invoicing | 🟡 Ongoing | Keep AR current | [→](Projects/quickbooks-invoicing.md) |
 | 2025 Taxes (personal/admin) | 🟡 To do | Gather documents; confirm filing status | [→](Projects/2025-taxes.md) |
 | Kids Photo Gallery | 🆕 New | Define concept + scope | [→](Projects/kids-photo-gallery.md) |
-| Roast Machine iOS App | 🆕 New | Define concept + scope | [→](Projects/roast-machine-ios-app.md) |
+| Roast Machine iOS App | 🟡 Scoping | Lock v1 mode list; scaffold Xcode project | [→](Projects/roast-machine-ios-app.md) |
+| Philip Baker Story Podcast (automated) | 🆕 New | Build in a focused session | [→](Projects/philipbaker-story-podcast.md) |
 
 ---
 
