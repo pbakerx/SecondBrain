@@ -11,7 +11,7 @@ BRAIN_PASSWORD="${BRAIN_PASSWORD:-changeme}"
 
 # 1. Pull the latest markdown from your Second Brain into ./content
 echo "→ Refreshing content from your brain..."
-BRAIN=".."
+BRAIN="."
 mkdir -p content/Projects content/Areas content/Resources
 cp "$BRAIN/SECOND-BRAIN.md" "$BRAIN/daily-log.md" content/ 2>/dev/null || true
 cp "$BRAIN/Projects/"*.md content/Projects/ 2>/dev/null || true
