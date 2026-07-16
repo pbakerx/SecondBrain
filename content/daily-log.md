@@ -6,6 +6,21 @@ _Capture inbox + running journal. Dump anything at the top; I'll file it into th
 
 ## 2026-07-15 (Wed)
 
+**Status updates (this session):**
+- **Honda/Acura Summer Ads** — ✅ done and billed → archived.
+- **Brock Institute** — portfolio download is good/done; next is Philip making the client edits.
+- **Top priority set:** Catapult website, philipbaker.us, aechtech.com.
+
+**7 AM scan (2nd pass) — folded in:**
+- **Roast Machine iOS App** — moved from stub → 🟡 Scoping. Full concept captured: photo → mode → vision → LLM → TTS → share, ~18 roast/nice modes, $0.99 unlock, `AechTech.RoastMachine`, reuses AssistAI Xcode + StoreKit config. Session in progress, awaiting build decisions.
+- **QuickBooks/Invoicing** — latest AcrobatAnt payments recorded; the full invoice set asked about now shows paid, small unapplied credit on account (amounts omitted).
+- **Lady on Main** — `play_song` hook confirmed deployed (`main` @ `c4149cf`); just needs an end-to-end test call.
+- **Brock Institute** — push-to-GitHub command staged with `cd` into the drive; ready to run the 4.3GB static-export push.
+- **Prospecting Voice Agent** — confirmed the 5-service profile stack (Places → Firecrawl → Sonnet → Apollo → Hunter → Haiku); "Heatwave" isn't a real tool (it's Hunter.io fallback).
+- **Ruby Tuesday** — timesheet entry for the Concept 7 work is in progress (awaiting billing details).
+
+---
+
 **Kicked off the Second Brain.** Structure built: Projects / Areas / Resources / Archive + this log.
 
 **From your sessions (folded in):**

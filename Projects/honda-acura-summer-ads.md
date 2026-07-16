@@ -1,6 +1,6 @@
 # Honda / Acura — Summer Service Ads (dealer name automation)
 
-**Area:** [AI Creative](../Areas/ai-creative.md) / client work · **Status:** 🟡 In progress (auto-detected — confirm)
+**Area:** [AI Creative](../Areas/ai-creative.md) / client work · **Status:** ✅ Done & billed (2026-07-15) — archived
 
 ## What it is
 Localized summer service ads for two auto brands — same ad, every dealer's own name on it, across 6 sizes + two creative versions + retargeting. ~1,012 dealers, 18,000+ individual files. Built as a system: one spreadsheet source of truth + parallel AI/After Effects render pipeline, each output checked against a shared spec.

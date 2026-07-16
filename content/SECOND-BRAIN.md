@@ -10,9 +10,9 @@ _Your command center. Everything you're building, in one place. Updated continuo
 
 > The 1–3 things that actually move the needle today. Reviewed every morning at 7 AM.
 
-1. **Honda/Acura Summer Ads** — resume the Honda render at range `598-722` (125 dealers left) → [open](Projects/honda-acura-summer-ads.md)
+1. **Catapult website** — top priority → [open](Projects/catapult-website.md)
 2. **philipbaker.us engine** — run `multisite.sql` in Supabase to unlock the multi-brand studio → [open](Projects/philipbkaer-us-engine.md)
-3. **Brock Institute** — repoint ~140 portfolio links to the downloaded local PDFs → [open](Projects/brock-institute.md)
+3. **aechtech.com** — brand site on the engine → [open](Projects/aechtech-website.md)
 
 See the running log → [Daily Log](daily-log.md)
 
@@ -23,8 +23,9 @@ _Time-bound, has a finish line._
 
 | Project | Status | Next action | Link |
 |---|---|---|---|
-| Honda/Acura Summer Service Ads | 🟡 In progress | Resume Honda render `598-722`; render Acura outliers | [→](Projects/honda-acura-summer-ads.md) |
-| Brock Institute site | 🟡 In progress | Repoint ~140 portfolio links to local PDFs | [→](Projects/brock-institute.md) |
+| 🔥 Catapult Website | 🔥 Top priority | Define scope; build/publish on engine | [→](Projects/catapult-website.md) |
+| 🔥 AechTech.com Website | 🔥 Top priority | Define scope; publish on engine | [→](Projects/aechtech-website.md) |
+| Brock Institute site | 🟡 In progress | **Make client edits** (download done) | [→](Projects/brock-institute.md) |
 | VoiceAgent — Mass Scale Marketing | 🟢 Pipeline proven | Scale outreach | [→](Projects/aechtech-voice-agents.md) |
 | Voice Agent — Personal Pitch | 🆕 New | Define concept + scope | [→](Projects/voice-agent-personal-pitch.md) |
 | Assist AI | 🟡 Building | Roast Machine · Daily Voice · Camera Overlay | [→](Projects/assist-ai.md) |
@@ -61,6 +62,8 @@ _Reference material, swipe files, taglines, research._
 
 ## 🗄️ Archive
 _Done or paused. Out of sight, still searchable._ → [Archive/](Archive/)
+
+- ✅ **Honda/Acura Summer Service Ads** — completed & billed (2026-07-15) → [file](Projects/honda-acura-summer-ads.md)
 
 ---
 
