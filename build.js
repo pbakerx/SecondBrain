@@ -1,4 +1,4 @@
-// Builds the Second Brain site from markdown, plus a Metrics page.
+// Builds the Second Brain site from markdown, plus a Metrics page (throughput, staleness, time).
 const fs = require('fs');
 const path = require('path');
 const { marked } = require('marked');
@@ -26,7 +26,7 @@ function slugFor(it) {
 }
 function titleFor(it, raw) {
   const m = raw.match(/^#\s+(.+)$/m);
-  if (m) return m[1].replace(/[#*`🧠🚀🌱📚🗄️📓🤖🎨📱✍️⚠️🔥🟡🟢🆕✅⭐📊]/gu, '').trim();
+  if (m) return m[1].replace(/[#*`🧠🚀🌱📚🗄️📓🤖🎨📱✍️⚠️🔥🟡🟢🆕✅⭐📊⏱️]/gu, '').trim();
   return it.file.replace(/\.md$/, '');
 }
 const linkMap = {};
@@ -52,7 +52,7 @@ const built = items.map(it => {
   return { slug, title, body, bucket };
 });
 
-// ---------- METRICS ----------
+// ---------- METRICS: statuses & staleness ----------
 function computeStats() {
   const dir = path.join(CONTENT, 'Projects');
   const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => f.endsWith('.md')) : [];
@@ -86,11 +86,27 @@ const staleness = stats.filter(s => s.cat !== 'done')
   .map(s => ({ title: s.title, days: s.days == null ? 0 : s.days }))
   .sort((a, b) => b.days - a.days);
 
+// ---------- METRICS: time (billable vs working) ----------
+let timelog = []; try { timelog = JSON.parse(fs.readFileSync(path.join(__dirname, 'time-log.json'), 'utf8')); } catch (e) {}
+const timeBy = {};
+for (const t of timelog) {
+  if (!t.project) continue;
+  timeBy[t.project] = timeBy[t.project] || { billable: 0, working: 0 };
+  timeBy[t.project][t.type === 'billable' ? 'billable' : 'working'] += Number(t.hours) || 0;
+}
+const timeProjects = Object.keys(timeBy).sort((a, b) => (timeBy[b].billable + timeBy[b].working) - (timeBy[a].billable + timeBy[a].working));
+const sum = (f) => timelog.filter(f).reduce((a, t) => a + (Number(t.hours) || 0), 0);
+const billTotal = sum(t => t.type === 'billable');
+const workTotal = sum(t => t.type !== 'billable');
+const d = new Date(); const wd = (d.getDay() + 6) % 7; d.setDate(d.getDate() - wd);
+const ws = d.toISOString().slice(0, 10);
+const weekBill = sum(t => t.type === 'billable' && t.date >= ws);
+const weekWork = sum(t => t.type !== 'billable' && t.date >= ws);
+
 const navOrder = ['Dashboard', 'Projects', 'Areas', 'Resources', 'Log'];
 function sidebar(activeSlug) {
   let s = '<nav class="side"><div class="brand">🧠 World of Business</div>';
-  const mc = activeSlug === 'metrics.html' ? ' class="active"' : '';
-  s += `<a href="metrics.html"${mc}>📊 Metrics</a>`;
+  s += `<a href="metrics.html"${activeSlug === 'metrics.html' ? ' class="active"' : ''}>📊 Metrics</a>`;
   for (const sec of navOrder) {
     if (!nav[sec] || !nav[sec].length) continue;
     s += `<div class="sec">${sec}</div>`;
@@ -121,36 +137,46 @@ const CSS = `
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px;min-width:120px}
 .card .n{font-size:30px;font-weight:700}.card .l{color:var(--muted);font-size:13px}
 .chartbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;margin:18px 0}
+.hint{color:var(--muted);font-size:13.5px;margin-top:-6px}
 @media(max-width:760px){.wrap{flex-direction:column}.side{width:100%;height:auto;position:static}.main{padding:24px}}
 `;
 const now = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
-function shell(activeSlug, title, mainInner, extraHead) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>${title} — World of Business</title><style>${CSS}</style>${extraHead || ''}</head><body><div class="wrap">${sidebar(activeSlug)}<main class="main">${mainInner}<div class="updated">Rendered ${now} · Philip Baker's Second Brain</div></main></div></body></html>`;
+function shell(activeSlug, title, mainInner) {
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>${title} — World of Business</title><style>${CSS}</style></head><body><div class="wrap">${sidebar(activeSlug)}<main class="main">${mainInner}<div class="updated">Rendered ${now} · Philip Baker's Second Brain</div></main></div></body></html>`;
 }
 function page(p) { return shell(p.slug, p.title, `<article class="content">${p.body}</article>`); }
-
 for (const p of built) fs.writeFileSync(path.join(OUT, p.slug), page(p));
 const dash = built.find(b => b.bucket === 'Dashboard') || built[0];
 fs.writeFileSync(path.join(OUT, 'index.html'), page(dash));
 
-// Metrics page
+const round1 = (x) => Math.round(x * 10) / 10;
+const timeSection = timeProjects.length ? `
+<h2>Time — billable vs working</h2>
+<p class="hint">Billable = what you logged. Working = auto-estimated from your sessions. This week: <b>${round1(weekBill)}h billable</b>, ${round1(weekWork)}h working.</p>
+<div class="chartbox"><canvas id="time" height="${Math.max(120, timeProjects.length * 28)}"></canvas></div>`
+  : `
+<h2>Time — billable vs working</h2>
+<p class="hint">No time logged yet. Log billable with <code>"log 2h billable to Brock"</code>; working time auto-fills from your sessions each morning.</p>`;
+
 const metricsMain = `<article class="content"><h1>📊 Metrics</h1>
 <div class="cards">
 <div class="card"><div class="n">${activeCount}</div><div class="l">Active</div></div>
 <div class="card"><div class="n">${newCount}</div><div class="l">New / not started</div></div>
 <div class="card"><div class="n">${doneCount}</div><div class="l">Completed</div></div>
-<div class="card"><div class="n">${stats.length}</div><div class="l">Total tracked</div></div>
+<div class="card"><div class="n">${round1(billTotal)}h</div><div class="l">Billable (total)</div></div>
+<div class="card"><div class="n">${round1(workTotal)}h</div><div class="l">Working (total)</div></div>
 </div>
 <h2>Throughput over time</h2>
-<p style="color:var(--muted);font-size:13.5px;margin-top:-6px">Daily snapshot of your pipeline. Trends fill in as the 7 AM sync runs each day.</p>
+<p class="hint">Daily snapshot of your pipeline. Trends fill in as the 7 AM sync runs each day.</p>
 <div class="chartbox"><canvas id="through" height="120"></canvas></div>
 <h2>Momentum &amp; staleness</h2>
-<p style="color:var(--muted);font-size:13.5px;margin-top:-6px">Days since each active project last moved. <span style="color:#ff6b6b">Red = 14+ days (going stale)</span>, amber = 7+, green = fresh.</p>
+<p class="hint">Days since each active project last moved. <span style="color:#ff6b6b">Red = 14+ days</span>, amber = 7+, green = fresh.</p>
 <div class="chartbox"><canvas id="stale" height="${Math.max(120, staleness.length * 26)}"></canvas></div>
+${timeSection}
 </article>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
-const HIST=${JSON.stringify(hist)}; const STALE=${JSON.stringify(staleness)};
+const HIST=${JSON.stringify(hist)}, STALE=${JSON.stringify(staleness)}, TIMEP=${JSON.stringify(timeProjects)}, TIMEB=${JSON.stringify(timeBy)};
 const grid={color:'#262b34'}, tick={color:'#9aa4b2'};
 new Chart(document.getElementById('through'),{type:'line',data:{labels:HIST.map(h=>h.date),datasets:[
 {label:'Active',data:HIST.map(h=>h.active),borderColor:'#7c9cff',backgroundColor:'#7c9cff33',tension:.3},
@@ -159,7 +185,11 @@ new Chart(document.getElementById('through'),{type:'line',data:{labels:HIST.map(
 options:{plugins:{legend:{labels:{color:'#e8eaed'}}},scales:{x:{grid,ticks:tick},y:{grid,ticks:tick,beginAtZero:true}}}});
 new Chart(document.getElementById('stale'),{type:'bar',data:{labels:STALE.map(s=>s.title),datasets:[{label:'Days since last activity',data:STALE.map(s=>s.days),backgroundColor:STALE.map(s=>s.days>=14?'#ff6b6b':s.days>=7?'#ffcf6b':'#5ad19a')}]},
 options:{indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{grid,ticks:tick,beginAtZero:true},y:{grid,ticks:tick}}}});
+if(TIMEP.length){new Chart(document.getElementById('time'),{type:'bar',data:{labels:TIMEP,datasets:[
+{label:'Billable',data:TIMEP.map(p=>TIMEB[p].billable),backgroundColor:'#7c9cff'},
+{label:'Working',data:TIMEP.map(p=>TIMEB[p].working),backgroundColor:'#ffcf6b'}]},
+options:{indexAxis:'y',plugins:{legend:{labels:{color:'#e8eaed'}}},scales:{x:{stacked:true,grid,ticks:tick,beginAtZero:true},y:{stacked:true,grid,ticks:tick}}}});}
 </script>`;
 fs.writeFileSync(path.join(OUT, 'metrics.html'), shell('metrics.html', 'Metrics', metricsMain));
 
-console.log('Built', built.length + 2, 'pages (incl. Metrics). Active', activeCount, 'New', newCount, 'Done', doneCount);
+console.log('Built', built.length + 2, 'pages. Active', activeCount, 'New', newCount, 'Done', doneCount, '| billable', round1(billTotal) + 'h working', round1(workTotal) + 'h');
