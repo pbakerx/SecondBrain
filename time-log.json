@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "date": "2026-07-16",
+    "project": "catapult-website",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-16",
+    "project": "lady-on-main",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-16",
+    "project": "roast-machine-ios-app",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-16",
+    "project": "brain-site",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  }
+]

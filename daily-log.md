@@ -4,6 +4,26 @@ _Capture inbox + running journal. Dump anything at the top; I'll file it into th
 
 ---
 
+## 2026-07-16 (Thu)
+
+**7 AM scan — folded in from your sessions:**
+- **Roast Machine iOS App** — 🚀 big jump: app is **built and running** with 14 modes, live portrait camera, and the voice pipeline working. StoreKit paywall wired with a graceful fallback; dev-unlock flag on for testing. Status moved 🟡 Scoping → 🟢 Built (v1 running). Next: app icon, voice-preview buttons, video export, App Store Connect product setup.
+- **Catapult website** — active build on the engine (`/?site=catapult`); hero type-on/off animation + typewriter SFX tuned (clack every 2 chars, "brrrr" erase, volumes balanced). `tsc` clean.
+- **Lady on Main** — `play_song` ElevenLabs hook confirmed live (`main` @ `c4149cf`); still just needs an end-to-end test call.
+- **Honda/Acura (archived)** — loose ends noted on the file: Honda render resumes at `598-722`; two Acura outliers ready via `Acura_Summer_OUTLIERS.jsx` (8 movies).
+
+**Blocked / waiting on you:**
+- **Brock Institute** — the client edits are on you; site also needs the dev-site URL + contact-form destination before the form can be wired.
+
+**Midday scan (2nd pass) — newer session work folded in:**
+- **Catapult** — "See the work" timeline got its emitter: rail re-centered to bottom-center, the logo-bug mounted as the source with a breathing gold halo + velocity-driven surge bloom (lines spring out of the mark). `tsc` clean but **uncommitted**. Logo SVG is raster, so the plan is a true-vector rebuild of the emitter (reuse the 4 real petal paths, recreate the center) to animate internals — awaiting your go.
+- **Lady on Main** — voice-agent prompt rewritten to "storyteller first, saleswoman never" with an occasional (not pushy) nudge to call Debra for a showing; phone number pulled from the prompt; top hero "See listing" button removed so visitors experience the song + call first. Pushed live (`ce3e250`, `b48d662`).
+
+**Blocked / decision waiting on you:**
+- **Catapult emitter** — say the word to commit the current animated emitter and/or start the vector rebuild.
+
+---
+
 ## 2026-07-15 (Wed)
 
 **Status updates (this session):**

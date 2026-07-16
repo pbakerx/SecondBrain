@@ -1,6 +1,6 @@
 # Roast Machine — iOS App
 
-**Area:** [App Development](../Areas/app-development.md) · **Status:** 🟡 Scoping (auto-detected — confirm)
+**Area:** [App Development](../Areas/app-development.md) · **Status:** 🟢 Built — v1 running (auto-detected — confirm)
 _Related: the "Roast Machine" build under [Assist AI](assist-ai.md)._
 
 ## What it is
@@ -16,4 +16,6 @@ SwiftUI iPhone/iPad app. Single flow: snap or pick a photo → choose a mode →
 - [ ] Wire vision → LLM → TTS flow with waveform + share/save
 
 ## Notes
-- 2026-07-15 (from session) — Concept laid out; session in progress, awaiting a few build decisions. Plan reuses the existing AssistAI Xcode config (automatic signing, `Secrets.xcconfig` key pattern, StoreKit in-app-purchase setup) as a head start — AssistAI folder left untouched.
+- 2026-07-16 (from session) — **Built & running.** App compiles and runs on-device with 14 modes, live portrait camera, and the voice pipeline working end-to-end. StoreKit paywall wired (`Subscriptions.storekit`, product IDs match code) with an honest loading state + "Store unavailable / Try Again" fallback. Dev flag `devUnlockEverything = true` in `StoreManager.swift` unlocks all modes for testing (flip to `false` to restore freemium gating before ship). Signing + StoreKit hurdles cleared.
+- Next options on the table: app icon (flame/mic motif), per-mode voice-preview button, export roast as a video clip (not just mp3) for social, roast history. App Store Connect product setup still to do for TestFlight/App Store.
+- 2026-07-15 (from session) — Concept laid out; plan reuses the existing AssistAI Xcode config (automatic signing, `Secrets.xcconfig` key pattern, StoreKit in-app-purchase setup) as a head start — AssistAI folder left untouched.
