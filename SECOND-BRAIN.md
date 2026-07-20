@@ -2,7 +2,7 @@
 
 _Your command center. Everything you're building, in one place. Updated continuously._
 
-**Last updated:** 2026-07-16 (midday session scan)
+**Last updated:** 2026-07-20 (7 AM session scan)
 
 ---
 
@@ -10,9 +10,10 @@ _Your command center. Everything you're building, in one place. Updated continuo
 
 > The 1–3 things that actually move the needle today. Reviewed every morning at 7 AM.
 
-1. **Catapult website** — top priority → [open](Projects/catapult-website.md)
-2. **philipbaker.us engine** — run `multisite.sql` in Supabase to unlock the multi-brand studio → [open](Projects/philipbkaer-us-engine.md)
+1. **philipbaker.us engine** — run `multisite.sql` in Supabase. This is the keystone: it unlocks the multi-brand studio, which unblocks both Catapult and AechTech domains → [open](Projects/philipbkaer-us-engine.md)
+2. **Catapult website** — top priority; define scope + first build on the engine → [open](Projects/catapult-website.md)
 3. **aechtech.com** — brand site on the engine → [open](Projects/aechtech-website.md)
+4. **Roam × AcrobatAnt** — reply sent ✅; build the options rundown when you have a creative block → [open](Projects/roam-acrobatant-ai-creative.md)
 
 See the running log → [Daily Log](daily-log.md)
 
@@ -31,11 +32,13 @@ _Time-bound, has a finish line._
 | Assist AI | 🟡 Building | Roast Machine · Daily Voice · Camera Overlay | [→](Projects/assist-ai.md) |
 | philipbaker.us engine | 🟡 Building | Run `multisite.sql` in Supabase | [→](Projects/philipbkaer-us-engine.md) |
 | Ruby Tuesday Summer LTOs | 🟡 In progress | Log timesheet; client review | [→](Projects/ruby-tuesday-summer-ltos.md) |
+| Downing Reunion 2026 | 🟢 Mechanical delivered | Confirm complete / invoice | [→](Projects/downing-reunion-2026.md) |
 | Lady on Main (real estate) | 🟢 Deployed | Test call end-to-end | [→](Projects/lady-on-main.md) |
 | QuickBooks / Invoicing | 🟡 Ongoing | Keep AR current | [→](Projects/quickbooks-invoicing.md) |
 | 2025 Taxes (personal/admin) | 🟡 To do | Gather documents; confirm filing status | [→](Projects/2025-taxes.md) |
 | Kids Photo Gallery | 🆕 New | Define concept + scope | [→](Projects/kids-photo-gallery.md) |
 | Roast Machine iOS App | 🟢 Built (v1 running) | App icon · voice-preview · video export; App Store Connect setup | [→](Projects/roast-machine-ios-app.md) |
+| Roam × AcrobatAnt — AI Creative | 🟢 Active | Send Angela's one-pager (confirm Honda/Acura naming first) | [→](Projects/roam-acrobatant-ai-creative.md) |
 | Philip Baker Story Podcast (automated) | 🆕 New | Build in a focused session | [→](Projects/philipbaker-story-podcast.md) |
 
 ---

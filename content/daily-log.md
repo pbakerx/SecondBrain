@@ -4,6 +4,70 @@ _Capture inbox + running journal. Dump anything at the top; I'll file it into th
 
 ---
 
+## 2026-07-20 (Mon)
+
+**7 AM scan — folded in from your sessions:**
+- **Roam × AcrobatAnt** — the one-page talking doc for Angela is drafted: Roam insight → "we can build any tool" → Honda/Acura proof (18,216 renders doing the heavy lifting) → where AcrobatAnt fits → a no-cost ask. Written to sound like you talking to Angela, not a deck talking at a room. Before it goes out: confirm you can name Honda/Acura externally, and decide if it later becomes a designed one-pager/deck.
+- Quiet Sunday otherwise — rest of the board unchanged.
+
+**Status updates (Philip):**
+- **Downing Reunion 2026** — got the order to finish the mechanical; ✅ done this morning. **2h billable logged.** → new project.
+- **Plan:** work on Catapult, and respond to Angela (Roam options) by tomorrow AM.
+
+**Blocked / decision waiting on you:**
+- **philipbaker.us engine** — `multisite.sql` still unrun in Supabase. Still the single unlock gating Catapult + AechTech domains.
+- **Catapult website** — top priority; scope + first build waiting on the SQL above. Emitter commit/vector-rebuild call still open (untouched since 7/16).
+- **Roast Machine** — commit the camera-first redesign from Terminal (open the **Software Development** copy).
+- **Brock Institute** — client edits still on you; dev-site URL + contact-form destination needed. **Untouched since 7/15 — stale.**
+
+---
+
+## 2026-07-19 (Sun)
+
+**7 AM scan — folded in from your sessions:**
+- **Lady on Main** — mid-page "See the House Listing" CTA now opens the prospects.com listing in a new tab (`5a72972`), and the page got a favicon: a brass house on a dark rounded square with one glowing amber window, in the speakeasy palette (SVG + PNG fallback + apple-touch-icon, `4493d1d`). Page keeps polishing; the one thing still open is the **end-to-end test call**.
+- Quiet weekend otherwise — the rest of the board (Roast Machine, philipbaker.us, Roam × AcrobatAnt, Catapult) is unchanged from Saturday's scan.
+
+**Blocked / decision waiting on you:**
+- **philipbaker.us engine** — `multisite.sql` still unrun in Supabase; it blocks the multi-brand studio, and therefore the Catapult + AechTech domains. This is the single unlock gating your top-3.
+- **Catapult website** — top priority, still needs scope defined + first build on the engine (which is waiting on the SQL above). Emitter commit/vector-rebuild call still open.
+- **Roast Machine** — commit the camera-first redesign from Terminal (open the **Software Development** copy, not the iCloud one); say the word to rename the stale iCloud copy.
+- **Brock Institute** — client edits still on you; dev-site URL + contact-form destination needed. **Untouched since 7/15 — stale.**
+
+---
+
+## 2026-07-18 (Sat)
+
+**7 AM scan — folded in from your sessions:**
+- **🆕 Roam × AcrobatAnt (new business)** — Angela asked you to help outline viable AI-creative options for Roam, an early-stage smart-tracker company MMC is assessing. ~5 hours of new-business (non-billable) time to start, plus possibly joining a call next week. Reply drafted — **not sent yet; she's expecting it this weekend.** New project file created.
+- **Lady on Main** — heritage eyebrow added at the top of the page ("ESTABLISHED 1901" + the Purcell address), styled like the plaque by a speakeasy door. Live at `b510ffa`.
+- **philipbaker.us engine** — "Video" search now works honestly: video medium derived on read (existing pieces surface with no re-saving) and persisted on save; "TV" stays curated. `tsc` clean, awaiting commit.
+- **Roast Machine iOS** — mystery solved: the redesign wasn't missing, Xcode was building the **old iCloud copy**. Build from `Software Development/RoastMachine 2.0`. The Xcode debugger errors were benign noise.
+
+**Update (midday):** ✅ Reply to Angela **sent** — she's in, and work has started on the Roam AI-creative options. Meeting this morning, working this afternoon.
+
+**Blocked / decision waiting on you:**
+- **Catapult emitter** — still your call: commit the animated emitter and/or start the true-vector rebuild. Untouched since 7/16.
+- **Roast Machine** — commit the redesign from Terminal; say the word to rename the stale iCloud copy.
+- **Brock Institute** — client edits still on you; dev-site URL + contact-form destination needed. **Untouched since 7/15 — going stale.**
+- **philipbaker.us engine** — `multisite.sql` still unrun in Supabase; it blocks the whole multi-brand studio (and therefore Catapult + AechTech domains).
+
+---
+
+## 2026-07-17 (Fri)
+
+**7 AM scan — folded in from your sessions:**
+- **philipbaker.us engine** — front-end polish on the live site: step-number now solid gold, prev/next + square markers dropped into a row below the number, timeline nudged left of its column center for better balance. `tsc` clean, ready to commit from the Mac. (Supabase `multisite.sql` still the big unlock — unrun.)
+- **Roast Machine iOS App** — **camera-first mechanical redesign** landed and compiles clean: opens straight into live camera, brushed-metal control panel with a knurled mode dial + chunky haptic shutter, and every mode now dresses the whole screen as its own "scene" (Comedy Club, Kitchen, Red Carpet, Boot Camp…) carried through to the result screen. Awaiting your commit in Terminal (sandbox leaves a git lock). Next: real painted scene art per mode.
+- **Second Brain (meta)** — Metrics page + billable/working time tracking shipped to the site; morning task now also drafts a Gmail brief + iMessage. Working-time auto-estimates begin logging with this scan.
+
+**Blocked / decision waiting on you:**
+- **Catapult emitter** — still needs your call: commit the current animated emitter and/or start the true-vector rebuild.
+- **Roast Machine** — clear the git lock + commit the redesign (`rm -f .git/index.lock` then `git add -A && commit`).
+- **Brock Institute** — client edits still on you; dev-site URL + contact-form destination needed to wire the form.
+
+---
+
 ## 2026-07-16 (Thu)
 
 **7 AM scan — folded in from your sessions:**

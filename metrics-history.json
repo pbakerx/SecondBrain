@@ -5,5 +5,12 @@
     "new": 0,
     "done": 1,
     "total": 16
+  },
+  {
+    "date": "2026-07-20",
+    "active": 14,
+    "new": 3,
+    "done": 1,
+    "total": 18
   }
 ]

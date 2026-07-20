@@ -30,5 +30,13 @@
     "type": "working",
     "source": "session-estimate",
     "note": "auto"
+  },
+  {
+    "date": "2026-07-20",
+    "project": "Downing Reunion 2026",
+    "hours": 2,
+    "type": "billable",
+    "source": "manual",
+    "note": "finished mechanical (client order)"
   }
 ]
