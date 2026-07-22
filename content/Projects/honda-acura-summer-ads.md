@@ -13,3 +13,5 @@ Localized summer service ads for two auto brands — same ad, every dealer's own
 
 ## Notes
 - 2026-07-15 (from session) — 8 AE scripts (460 lines each) verified; Honda CSV = 722 dealers, Acura = 196, both matched to source Excel. Outlier script written. Gallery package built + verified (relative paths, ~138 MB zip).
+
+- 2026-07-21 (from session) — One-page technical write-up of the AE automation pipeline created (data validation layer, ExtendScript code generation, cache-purge insight, error recovery, portability fix) — saved to the Honda Acura Summer Social Ads folder on the Extreme Pro. Good LinkedIn/case-study fodder.

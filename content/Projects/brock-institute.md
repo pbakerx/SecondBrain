@@ -24,5 +24,7 @@
 - 2026-07-15 (from session) — Wired GitHub to the new source of truth: the static export is becoming the new `main` of `pbakerx/brock-institute`, with the current hand-built site preserved as a `rebuild-archive` branch (nothing lost). Push script staged on the external drive. Live site left untouched.
 - 2026-07-15 (from session) — Downloaded both portfolio PDF batches (~140 PDFs). ✅ Download good/done. Next: Philip makes the client edits.
 
+- 2026-07-21 (from session) — Philip said he was starting the client edits that evening ("working on Brock Institute now"). Confirm progress + what's left.
+
 ## Changelog
 - 2026-07-15 — Project created, scope doc drafted.

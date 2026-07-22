@@ -4,6 +4,45 @@ _Capture inbox + running journal. Dump anything at the top; I'll file it into th
 
 ---
 
+## 2026-07-22 (Wed)
+
+**7 AM scan — folded in from your sessions:**
+- **Busy Tuesday.** Four work fronts moved: the **AcrobatAnt CEO presentation** (7-page "AI Creative Workflow" deck — new project, auto-detected) was built and polished; the **QuickBooks unbilled tracker** got the AcrobatAnt Roam workflow entry (5 hrs) — three open unbilled entries now; a **one-page technical write-up of the Honda/Acura AE automation pipeline** was produced (case-study/LinkedIn fodder); and you told me you were starting **Brock Institute client edits** Tuesday evening — confirm how far you got.
+- You set an **8 PM reminder for `multisite.sql`** — the reminder fired, but I don't see evidence the SQL has been run yet. Still the keystone.
+
+**Status updates (Philip):**
+- **Brock Institute** — started; **sending the client their email this morning.**
+- **Catapult** — working on it today; **will issue the `multisite.sql`** today.
+- **Billing** — need to **invoice AcrobatAnt** for the Roam AI-proposal work (the 5 hrs on the unbilled tracker).
+
+**Blocked / going stale:**
+- **philipbaker.us engine** — `multisite.sql` still unrun in Supabase. Single unlock gating Catapult + AechTech.
+- **Roam × AcrobatAnt** — waiting on Angela's reaction; confirm this week's call time.
+- **Roast Machine** — commit the camera-first redesign from Terminal (Software Development copy).
+- **Catapult emitter** — commit/vector-rebuild call still open (untouched since 7/16).
+
+---
+
+## 2026-07-21 (Tue)
+
+**7 AM scan — folded in from your sessions:**
+- Quiet since yesterday's midday session. That session put **Downing Reunion 2026** on the board (mechanical ✅ delivered, 2h billable logged) and pushed everything live (`cf0d3e0`) — no new work sessions overnight, board unchanged.
+
+**Today per your own plan (set yesterday):** work on Catapult + get Angela the Roam options **by this morning**. The one-pager is drafted — it just needs the Honda/Acura naming check and a send.
+
+**Status updates (Philip, mid-morning):**
+- **Roam × AcrobatAnt** — ✅ one-pager **sent to Angela**, on deadline. Awaiting her reaction / next week's call.
+- **Downing** — **new project started** for Downing; hours logged in Philip's timesheets. Details TBD (scope/name to confirm — may deserve its own project file).
+
+**Blocked / decision waiting on you:**
+- **philipbaker.us engine** — `multisite.sql` still unrun in Supabase. Still the single unlock gating Catapult + AechTech domains.
+- **Roam × AcrobatAnt** — Angela's one-pager drafted; confirm you can name Honda/Acura externally, then send. **Deadline you set: this AM.**
+- **Roast Machine** — commit the camera-first redesign from Terminal (open the **Software Development** copy).
+- **Catapult emitter** — commit/vector-rebuild call still open (untouched since 7/16).
+- **Brock Institute** — client edits still on you; dev-site URL + contact-form destination needed. **Untouched since 7/15 — 6 days stale.**
+
+---
+
 ## 2026-07-20 (Mon)
 
 **7 AM scan — folded in from your sessions:**
