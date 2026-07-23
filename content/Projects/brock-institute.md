@@ -26,5 +26,7 @@
 
 - 2026-07-21 (from session) — Philip said he was starting the client edits that evening ("working on Brock Institute now"). Confirm progress + what's left.
 
+- 2026-07-22 (from session) — **Site relocated to `~/Software Development/Brock Institute/...` (off iCloud) and committed** (`fe686ce` on `main`, remote `pbakerx/brock-institute`). Verified: 125 pages, zero missing assets/links, no iCloud stub residue, working tree clean. `ABOUT-BROCK-WEBSITE.md` added to repo root (full origin/rebuild/export/move history). Local server: `Start Brock Local Server.command` (port 3001). ⚠️ Before any push, check `git log origin/main -1` — if it holds the old 4GB export, a plain push is rejected. **Client edits + client email still on Philip** — the actual content changes haven't landed yet. Billing note: **INV-0131 (hosting letter) still un-sent**.
+
 ## Changelog
 - 2026-07-15 — Project created, scope doc drafted.

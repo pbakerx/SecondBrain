@@ -12,3 +12,4 @@ A 7-page presentation for AcrobatAnt's CEO on the AI creative workflow — "A sy
 
 ## Notes
 - 2026-07-21 (from session) — Deck built and refined to 7 pages: new cover ("A system that learns."), brand consistency moved to the front, CEO glossary page removed, DCO callout spelled out, closing page rebuilt as a proper timeline with nodes on a spine.
+- 2026-07-22 (from session) — Final files rendered clean (7 pages). Related: Angela's Capability Map v3 (see [Roam × AcrobatAnt](roam-acrobatant-ai-creative.md)) exposes one gap worth folding into the deck's toolbox page — Firefly's commercial indemnification (broadcast/OOH clearance) and the localization/dubbing wedge aren't currently represented.

@@ -2,7 +2,7 @@
 
 _Your command center. Everything you're building, in one place. Updated continuously._
 
-**Last updated:** 2026-07-22 (7 AM session scan)
+**Last updated:** 2026-07-23 (7 AM session scan)
 
 ---
 
@@ -10,10 +10,10 @@ _Your command center. Everything you're building, in one place. Updated continuo
 
 > The 1–3 things that actually move the needle today. Reviewed every morning at 7 AM.
 
-1. **philipbaker.us engine** — run `multisite.sql` in Supabase. This is the keystone: it unlocks the multi-brand studio, which unblocks both Catapult and AechTech domains → [open](Projects/philipbkaer-us-engine.md)
-2. **Catapult website** — top priority; define scope + first build on the engine → [open](Projects/catapult-website.md)
-3. **aechtech.com** — brand site on the engine → [open](Projects/aechtech-website.md)
-4. **Roam × AcrobatAnt** — one-pager **sent ✅** (2026-07-21); awaiting Angela's reaction / next week's call → [open](Projects/roam-acrobatant-ai-creative.md)
+1. **Catapult website — content** 🔥 today's priority. Build out real content on the engine (multisite is live now) → [open](Projects/catapult-website.md)
+2. **philipbaker.us engine** — ✅ `multisite.sql` run 2026-07-23 (keystone cleared; multi-brand studio unblocked). Next: studio UI + per-brand assignment → [open](Projects/philipbkaer-us-engine.md)
+3. **Roam × AcrobatAnt** — get the 8 yellow-cell answers to Angela (your approval before anything sends). 📌 TODO: bill AcrobatAnt for the Roam work → [open](Projects/roam-acrobatant-ai-creative.md)
+4. **aechtech.com** — brand site on the engine, now unblocked → [open](Projects/aechtech-website.md)
 
 See the running log → [Daily Log](daily-log.md)
 
@@ -24,22 +24,22 @@ _Time-bound, has a finish line._
 
 | Project | Status | Next action | Link |
 |---|---|---|---|
-| 🔥 Catapult Website | 🔥 Top priority | Define scope; build/publish on engine | [→](Projects/catapult-website.md) |
+| 🔥 Catapult Website | 🔥 Top priority — content | Build real content on the engine (multisite live) | [→](Projects/catapult-website.md) |
 | 🔥 AechTech.com Website | 🔥 Top priority | Define scope; publish on engine | [→](Projects/aechtech-website.md) |
-| Brock Institute site | 🟡 In progress | **Make client edits** (download done) | [→](Projects/brock-institute.md) |
+| Brock Institute site | 🟡 In progress | **Make client edits + send client email** (site moved off iCloud & committed `fe686ce`) | [→](Projects/brock-institute.md) |
 | VoiceAgent — Mass Scale Marketing | 🟢 Pipeline proven | Scale outreach | [→](Projects/aechtech-voice-agents.md) |
 | Voice Agent — Personal Pitch | 🆕 New | Define concept + scope | [→](Projects/voice-agent-personal-pitch.md) |
 | Assist AI | 🟡 Building | Roast Machine · Daily Voice · Camera Overlay | [→](Projects/assist-ai.md) |
-| philipbaker.us engine | 🟡 Building | Run `multisite.sql` in Supabase | [→](Projects/philipbkaer-us-engine.md) |
+| philipbaker.us engine | 🟢 Multisite live | Build studio UI + assign brands | [→](Projects/philipbkaer-us-engine.md) |
 | Ruby Tuesday Summer LTOs | 🟡 In progress | Log timesheet; client review | [→](Projects/ruby-tuesday-summer-ltos.md) |
 | Downing Reunion 2026 | 🟢 Mechanical delivered | Confirm complete / invoice · new Downing project started (details TBD) | [→](Projects/downing-reunion-2026.md) |
 | Lady on Main (real estate) | 🟢 Deployed | Test call end-to-end | [→](Projects/lady-on-main.md) |
-| QuickBooks / Invoicing | 🟡 Ongoing | Keep AR current | [→](Projects/quickbooks-invoicing.md) |
+| QuickBooks / Invoicing | 🟡 Ongoing | Send INV-0131 (Brock); clear Downing + Okeii unbilled (AcrobatAnt Roam invoiced ✅) | [→](Projects/quickbooks-invoicing.md) |
 | 2025 Taxes (personal/admin) | 🟡 To do | Gather documents; confirm filing status | [→](Projects/2025-taxes.md) |
 | Kids Photo Gallery | 🆕 New | Define concept + scope | [→](Projects/kids-photo-gallery.md) |
 | Roast Machine iOS App | 🟢 Built (v1 running) | App icon · voice-preview · video export; App Store Connect setup | [→](Projects/roast-machine-ios-app.md) |
-| Roam × AcrobatAnt — AI Creative | 🟢 Active | One-pager sent ✅ — await Angela; confirm next week's call | [→](Projects/roam-acrobatant-ai-creative.md) |
-| AcrobatAnt CEO Presentation (AI Creative Workflow) | 🆕 New (auto-detected — confirm) | Confirm scope; deliver to CEO | [→](Projects/acrobatant-ceo-presentation.md) |
+| Roam × AcrobatAnt — AI Creative | 🟢 Active | Certify 8 capability yellow cells (Michael + you) + tool inventory | [→](Projects/roam-acrobatant-ai-creative.md) |
+| AcrobatAnt CEO Presentation (AI Creative Workflow) | 🟢 Deck rendered (7 pp) | Confirm scope + present to CEO; align toolbox page to Capability Map | [→](Projects/acrobatant-ceo-presentation.md) |
 | Philip Baker Story Podcast (automated) | 🆕 New | Build in a focused session | [→](Projects/philipbaker-story-podcast.md) |
 
 ---

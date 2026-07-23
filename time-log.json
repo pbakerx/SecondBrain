@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-07-16",
+    "project": "brain-site",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-16",
     "project": "catapult-website",
     "hours": 0.5,
     "type": "working",
@@ -24,8 +32,80 @@
     "note": "auto"
   },
   {
-    "date": "2026-07-16",
-    "project": "brain-site",
+    "date": "2026-07-17",
+    "project": "lady-on-main",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-17",
+    "project": "philipbkaer-us-engine",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-17",
+    "project": "roam-acrobatant-ai-creative",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-17",
+    "project": "roast-machine-ios-app",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-18",
+    "project": "lady-on-main",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-18",
+    "project": "philipbkaer-us-engine",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-18",
+    "project": "roam-acrobatant-ai-creative",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-18",
+    "project": "roast-machine-ios-app",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-19",
+    "project": "lady-on-main",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-19",
+    "project": "roam-acrobatant-ai-creative",
     "hours": 0.5,
     "type": "working",
     "source": "session-estimate",
@@ -38,5 +118,85 @@
     "type": "billable",
     "source": "manual",
     "note": "finished mechanical (client order)"
+  },
+  {
+    "date": "2026-07-20",
+    "project": "downing-reunion-2026",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-21",
+    "project": "acrobatant-ceo-presentation",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-21",
+    "project": "brock-institute",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-21",
+    "project": "honda-acura-summer-ads",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-21",
+    "project": "quickbooks-invoicing",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-22",
+    "project": "acrobatant-ceo-presentation",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-22",
+    "project": "brock-institute",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-22",
+    "project": "philipbkaer-us-engine",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-22",
+    "project": "quickbooks-invoicing",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
+  },
+  {
+    "date": "2026-07-22",
+    "project": "roam-acrobatant-ai-creative",
+    "hours": 0.5,
+    "type": "working",
+    "source": "session-estimate",
+    "note": "auto"
   }
 ]

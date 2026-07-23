@@ -29,7 +29,7 @@
 <div class="card"><div class="n">4</div><div class="l">New / not started</div></div>
 <div class="card"><div class="n">1</div><div class="l">Completed</div></div>
 <div class="card"><div class="n">2h</div><div class="l">Billable (total)</div></div>
-<div class="card"><div class="n">2h</div><div class="l">Working (total)</div></div>
+<div class="card"><div class="n">12h</div><div class="l">Working (total)</div></div>
 </div>
 <h2>Throughput over time</h2>
 <p class="hint">Daily snapshot of your pipeline. Trends fill in as the 7 AM sync runs each day.</p>
@@ -39,12 +39,12 @@
 <div class="chartbox"><canvas id="stale" height="468"></canvas></div>
 
 <h2>Time — billable vs working</h2>
-<p class="hint">Billable = what you logged. Working = auto-estimated from your sessions. This week: <b>2h billable</b>, 0h working.</p>
-<div class="chartbox"><canvas id="time" height="140"></canvas></div>
+<p class="hint">Billable = what you logged. Working = auto-estimated from your sessions. This week: <b>2h billable</b>, 5h working.</p>
+<div class="chartbox"><canvas id="time" height="336"></canvas></div>
 </article>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
-const HIST=[{"date":"2026-07-16","active":15,"new":0,"done":1,"total":16},{"date":"2026-07-20","active":14,"new":3,"done":1,"total":18},{"date":"2026-07-22","active":14,"new":4,"done":1,"total":19}], STALE=[{"title":"VoiceAgent — Mass Scale Marketing","days":7},{"title":"Ruby Tuesday — Summer LTO Campaign Concepts","days":7},{"title":"Catapult — Website","days":6},{"title":"philipbaker.us — Engine (multi-tenant studio)","days":5},{"title":"Roast Machine — iOS App","days":5},{"title":"Lady on Main — real estate landing page (voice agent)","days":4},{"title":"AcrobatAnt — CEO Presentation: The AI Creative Workflow","days":1},{"title":"Brock Institute — Website Project","days":1},{"title":"Downing Reunion 2026","days":1},{"title":"QuickBooks / Invoicing (admin)","days":1},{"title":"Roam × AcrobatAnt — AI Creative Options (new business)","days":1},{"title":"2025 Taxes","days":0},{"title":"AechTech.com — Website","days":0},{"title":"Assist AI","days":0},{"title":"Brock Institute — Website Scope of Work","days":0},{"title":"Kids Photo Gallery","days":0},{"title":"Philip Baker Story Podcast — Automated","days":0},{"title":"Voice Agent — Personal Pitch","days":0}], TIMEP=["Downing Reunion 2026","catapult-website","lady-on-main","roast-machine-ios-app","brain-site"], TIMEB={"catapult-website":{"billable":0,"working":0.5},"lady-on-main":{"billable":0,"working":0.5},"roast-machine-ios-app":{"billable":0,"working":0.5},"brain-site":{"billable":0,"working":0.5},"Downing Reunion 2026":{"billable":2,"working":0}};
+const HIST=[{"date":"2026-07-16","active":15,"new":0,"done":1,"total":16},{"date":"2026-07-20","active":14,"new":3,"done":1,"total":18},{"date":"2026-07-22","active":14,"new":4,"done":1,"total":19},{"date":"2026-07-23","active":14,"new":4,"done":1,"total":19}], STALE=[{"title":"VoiceAgent — Mass Scale Marketing","days":8},{"title":"Ruby Tuesday — Summer LTO Campaign Concepts","days":8},{"title":"Catapult — Website","days":7},{"title":"Roast Machine — iOS App","days":6},{"title":"Lady on Main — real estate landing page (voice agent)","days":5},{"title":"Downing Reunion 2026","days":2},{"title":"AcrobatAnt — CEO Presentation: The AI Creative Workflow","days":1},{"title":"Brock Institute — Website Project","days":1},{"title":"QuickBooks / Invoicing (admin)","days":1},{"title":"Roam × AcrobatAnt — AI Creative Options (new business)","days":1},{"title":"2025 Taxes","days":0},{"title":"AechTech.com — Website","days":0},{"title":"Assist AI","days":0},{"title":"Brock Institute — Website Scope of Work","days":0},{"title":"Kids Photo Gallery","days":0},{"title":"Philip Baker Story Podcast — Automated","days":0},{"title":"philipbaker.us — Engine (multi-tenant studio)","days":0},{"title":"Voice Agent — Personal Pitch","days":0}], TIMEP=["lady-on-main","roam-acrobatant-ai-creative","Downing Reunion 2026","roast-machine-ios-app","philipbkaer-us-engine","acrobatant-ceo-presentation","brock-institute","quickbooks-invoicing","brain-site","catapult-website","downing-reunion-2026","honda-acura-summer-ads"], TIMEB={"brain-site":{"billable":0,"working":0.5},"catapult-website":{"billable":0,"working":0.5},"lady-on-main":{"billable":0,"working":2},"roast-machine-ios-app":{"billable":0,"working":1.5},"philipbkaer-us-engine":{"billable":0,"working":1.5},"roam-acrobatant-ai-creative":{"billable":0,"working":2},"Downing Reunion 2026":{"billable":2,"working":0},"downing-reunion-2026":{"billable":0,"working":0.5},"acrobatant-ceo-presentation":{"billable":0,"working":1},"brock-institute":{"billable":0,"working":1},"honda-acura-summer-ads":{"billable":0,"working":0.5},"quickbooks-invoicing":{"billable":0,"working":1}};
 const grid={color:'#262b34'}, tick={color:'#9aa4b2'};
 new Chart(document.getElementById('through'),{type:'line',data:{labels:HIST.map(h=>h.date),datasets:[
 {label:'Active',data:HIST.map(h=>h.active),borderColor:'#7c9cff',backgroundColor:'#7c9cff33',tension:.3},
@@ -57,4 +57,4 @@ if(TIMEP.length){new Chart(document.getElementById('time'),{type:'bar',data:{lab
 {label:'Billable',data:TIMEP.map(p=>TIMEB[p].billable),backgroundColor:'#7c9cff'},
 {label:'Working',data:TIMEP.map(p=>TIMEB[p].working),backgroundColor:'#ffcf6b'}]},
 options:{indexAxis:'y',plugins:{legend:{labels:{color:'#e8eaed'}}},scales:{x:{stacked:true,grid,ticks:tick,beginAtZero:true},y:{stacked:true,grid,ticks:tick}}}});}
-</script><div class="updated">Rendered 2026-07-22 15:19 UTC · Philip Baker's Second Brain</div></main></div></body></html>
+</script><div class="updated">Rendered 2026-07-23 13:47 UTC · Philip Baker's Second Brain</div></main></div></body></html>

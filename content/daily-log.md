@@ -4,6 +4,29 @@ _Capture inbox + running journal. Dump anything at the top; I'll file it into th
 
 ---
 
+## 2026-07-23 (Thu)
+
+**7 AM scan — folded in from your sessions:**
+- **Billing moved — nice.** ✅ **INV-0137 created and sent to AcrobatAnt** for the Roam new-business work (5 hrs) — that clears the "invoice AcrobatAnt" to-do that's been open since Tuesday. Timesheet moved Unbilled → Archive. **Two entries still unbilled: David Downing + Okeii.** And one loose end surfaced: **INV-0131 (Brock hosting letter) is created but never sent** — quick send.
+- **Roam × AcrobatAnt got real.** Angela sent AcrobatAnt's internal **Capability Map v3**. The deal's further along than the deck assumed — a full MMC media ecosystem (Sinclair, A+E, Atmosphere TV, TelevisaUnivision, CTV), a measurement partner (WITHIN), and a named counterpart (Lohit); Roam skews broadcast/venue, not just social. **All 8 "yellow-cell" answers drafted** — your Honda/Acura work is ready-made TODAY evidence for two of them. Your move: Michael + you certify the cells (15 min) + inventory licensed tools; name a native-speaker reviewer for the localization line.
+- **Brock Institute** — site **moved off iCloud** to `~/Software Development/...` and committed (`fe686ce`); 125 pages verified clean, About doc added. But the **client edits + client email are still on you** — the content changes haven't landed.
+- **philipbaker.us** — session prepped and ready to boot; `HANDOFF.md` written into the repo. **`multisite.sql` still unrun** (run `schema.sql` then `multisite.sql` in Supabase, project `ytcqvrmixqkpdyizmmit`). Uncommitted video-tag changes on `redesign` — commit for a clean tree.
+
+**Status updates (Philip, live):**
+- ✅ **`multisite.sql` RUN** ("and more") — the keystone is cleared; the multi-brand studio is unblocked, which frees Catapult + aechtech.com. _(Done in Claude Code, so the 7 AM Cowork scan couldn't see it — that's the blind spot, not a regression.)_ Engine status → 🟢 Multisite live.
+- 🎯 **Catapult content is today's priority** — building real content on the engine.
+- 📌 **TODO: bill AcrobatAnt for the Roam work** (the yellow-cell capability answers) — noted as a to-do only; Philip logs billable time himself. Nothing goes to Angela without Philip's approval.
+
+**Session consolidation detected:** You're collecting sessions into project folders — this cycle the **Second Brain manager session, philipbaker.us, and Brock** each got a self-contained HANDOFF/ABOUT doc so a grouped session can pick them up cleanly. Board already matches your groupings — no new stubs spawned, nothing renamed. Flag me if any two sessions should merge into one project file.
+
+**Blocked / going stale:**
+- **philipbaker.us engine** — `multisite.sql` still the single keystone gating Catapult + AechTech. **Untouched-in-DB since 7/15.**
+- **Catapult website** — top priority; scope + first build still waiting on the SQL. Emitter commit/vector-rebuild call open (untouched since 7/16 — **7 days stale**).
+- **Roast Machine** — camera-first redesign still uncommitted from Terminal (untouched since ~7/18).
+- **Brock Institute** — client edits + email still pending; INV-0131 un-sent.
+
+---
+
 ## 2026-07-22 (Wed)
 
 **7 AM scan — folded in from your sessions:**
